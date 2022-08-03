@@ -1,0 +1,91 @@
+body {
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #5454e4;
+  --light-color: rgba(255, 255, 255, 0.829);
+  --button-color: #1bc6cc;
+  --oracle-alura-color: #cde20a;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.container img {
+  position: absolute;
+  margin-top: 100px;
+  width: 300px;
+}
+.container h1 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a img {
+  width: 40px;
+  margin: 0 20px;
+}
+
+.info {
+  color: var(--light-color);
+  font-size: 20px;
+}
+
+.oracleAlura {
+  color: var(--oracle-alura-color);
+}
+.numerador,
+.denominador {
+  border: 1px solid;
+}
+
+input {
+  width: 30px;
+}
+hr {
+  width: 40px;
+  margin: 10px 0;
+}
+
+.button button {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--button-color);
+  margin: 20px 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.canva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canva canvas {
+  width: 200%;
+}
+@media (min-width: 576px) {
+  .container img {
+    width: 500px;
+  }
+  .container h1 {
+    font-size: 40px;
+  }
+}
